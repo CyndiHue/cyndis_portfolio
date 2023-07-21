@@ -1,29 +1,33 @@
 body {
     background-color: black;
+    color: white;
 }
 
 header {
     color: white;
     list-style: none;
-    
-}
-
-h1 {
-
 }
 
 nav {
     text-align: right;
 }
 
-li{
+li {
     display: inline;
     margin: 10px;
-    
+    color: white;
 
 }
 
-main{
+img {
+    position:static;
+    width:100%;
+    max-width: 100%;
+}
+
+
+main {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    color: white;
 }

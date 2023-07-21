@@ -5,7 +5,7 @@
     margin: 0;
 }
 body {
-    background-color: rgb(40, 64, 70);
+    background-color: rgb(42, 67, 73);
     color: white;
 }
 
@@ -16,8 +16,9 @@ header {
 }
 
 header section {
+    display: flex;
     border-style: groove;border-style: groove;
-    background-color: rgb(6, 10, 11);
+    background-color: rgb(27, 44, 48);
     height: 90%;
 }
 
@@ -28,15 +29,13 @@ a {
 
 
 header h1 {
-    display: inline-block;
     font-weight: bold;
-    padding: 20px 0;
+    font-size: 40px;
+    position: relative; top: 35px;
 }
 
 header nav {
-    padding-bottom: 20px;
-    float: right;
-    margin-top: 120px;
+    
 }
 
 header nav ul {
@@ -48,7 +47,7 @@ header nav ul {
 header nav ul li {
     display: inline;
 
-}
+} 
 
 #img2 {
     position:static;
@@ -58,11 +57,10 @@ header nav ul li {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
     color: white;
-    font-size: 40px;
-    border-style: groove;
-    background-color: rgb(27, 44, 48);
+    font-size: 25px;
+    
 }
 
 main section {

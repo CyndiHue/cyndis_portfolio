@@ -1,15 +1,47 @@
+*/{
+    box-sizing: border-box;
+    color: white;
+}
 body {
     background-color: black;
     color: white;
 }
 
+header {
+    display: block;
+    box-sizing: border-box;
+    color: white;
+}
+
+a {
+    text-decoration-line: none;
+    color: white;
+}
+
+header h1 {
+    
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: inline;
+   
+}
+
+header nav ul li {
+display: inline;
+
+}
 
 img {
     position:static;
     width:100%;
     max-width: 100%;
 }
-
 
 main {
     display: grid;

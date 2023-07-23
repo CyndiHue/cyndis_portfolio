@@ -121,8 +121,6 @@ div img {
 .main-content {
     display: grid;
     gap:30px;
-    grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: 35% 35% 40%;
     grid-template-areas: 
       "about-me amb2 amb2" 
       "my-work mw1 mw1"
@@ -166,23 +164,36 @@ grid-area:cm1;
   
 
 @media screen and (max-width: 992px) {
-    main {
-        grid-template-columns: 3fr;
-        grid-template-rows: 35% 35% 40%;
-        }
     header nav ul {
         grid-template-columns: 1fr;
+        grid-template-rows: 10%;
         grid-template-rows: 40px 40px 40px;
     }
-    
+
+    .main-content {
+        display: none; 
+        display: block;
+        padding: 20px 40px 20px 40px;
+    }  
+
+    .captions {
+        border: none;
+        border-bottom: solid;
+
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .main-content {
-        grid-template-columns: 3fr;
-        grid-template-rows: repeat(6, 200px);
+
         }
     
     header nav ul {
         position: relative; left: -150px; top: -40px;
-        }}
+        header nav ul {
+        padding-left: -40px;
+        }
+    }
+    }
     }

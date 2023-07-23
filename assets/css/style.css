@@ -2,8 +2,8 @@
 */{
     box-sizing: border-box;
     color: white;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 20px;
 }
 
 body {
@@ -15,6 +15,7 @@ header {
     box-sizing: border-box;
     color: white;
     border-style: groove;
+    
 }
 
 header section {
@@ -24,12 +25,12 @@ header section {
     background-color: rgb(27, 44, 48);
     height: 80%;
 }
+
 #img1 {
     width: 150px;
     border-radius: 100%;
     padding: 10px;
     margin: 10px;
-    
 }
 
 header h1 {
@@ -64,52 +65,68 @@ a {
     width:100%;
     max-width: 100%;
     position: relative; top: 2.5px;
+   
 }
 
-/* main section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, 100px);
-    color: white;
-    font-size: 25px;
-    grid-template-areas:;
-    
-} */
-
-/* #main-content {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(3, 100px);
-        color: white;
-        font-size: 25px;
-        grid-template-areas:
-            "about-me block1"
-            "my-work block 2 b"
-            "contact-me block4"
-} */
-
+/* starting here is the formatting for the content or grid layout */
 div{
     color:white;
   
   }
-  
+
+div h2{
+    position: relative; left: 40px; top: -10px
+}
+
+div img {
+    position: relative; left: 20px; top: -10px;
+    border-radius: 20px;
+}
 .captions {
+    font-size: 60px;
+    border-right: solid;
+   
+}
+
+.description1 {
     font-size: 25px;
+    margin-right: 10%;
 }
-
-.image-links {
-    border-radius: 100%;
-}
-
-.container4 {
+.description2 {
+    font: 25px;
     display: grid;
-    column-gap:20px;
-    grid-template-columns:  1fr 2fr 2fr;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 10%;
+
+}
+
+.image-links1 {
+    width: 900px;
+    border: solid 2px black;
+    background-color: rgb(27, 44, 48);
+    border-radius: 20px;
+
+    
+}
+
+.image-links2{
+    width: 75%;
+    height: 90%;
+    border: solid 2px black;
+    background-color: rgb(27, 44, 48);
+    border-radius: 20px;
+}
+
+
+.main-content {
+    display: grid;
+    gap:30px;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 140px 280px 300px;
     grid-template-areas: 
       "about-me amb2 amb2" 
-      "my-work mw1 mw2"
-      "my-work mw3 mw4"
+      "my-work mw1 mw1"
+      "my-work mw2 mw3"
       "contact-me cm1 cm1";
 }
   
@@ -128,15 +145,11 @@ div{
 }
 
 .mw2{
-    grid-area:mw2;
+grid-area:mw2;
 }
 
 .mw3{
 grid-area:mw3;
-}
-
-.mw4{
-grid-area:mw4;
 }
 
 .contact-me{
@@ -146,7 +159,7 @@ grid-area:contact-me;
 .cm1{
 grid-area:cm1;
 }
-  
+/*ending here is the formatting for the content or grid layout */  
   
   
   

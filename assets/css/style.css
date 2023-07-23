@@ -15,7 +15,6 @@ header {
     box-sizing: border-box;
     color: white;
     border-style: groove;
-    
 }
 
 header section {
@@ -65,7 +64,6 @@ a {
     width:100%;
     max-width: 100%;
     position: relative; top: 2.5px;
-   
 }
 
 /* starting here is the formatting for the content or grid layout */
@@ -81,6 +79,7 @@ div h2{
 div img {
     position: relative; left: 20px; top: -10px;
     border-radius: 20px;
+    width: 80%;
 }
 .captions {
     font-size: 60px;
@@ -101,7 +100,8 @@ div img {
 }
 
 .image-links1 {
-    width: 900px;
+    width: 100%;
+    height: 100%;
     border: solid 2px black;
     background-color: rgb(27, 44, 48);
     border-radius: 20px;
@@ -110,8 +110,8 @@ div img {
 }
 
 .image-links2{
-    width: 75%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border: solid 2px black;
     background-color: rgb(27, 44, 48);
     border-radius: 20px;
@@ -122,7 +122,7 @@ div img {
     display: grid;
     gap:30px;
     grid-template-columns:  1fr 1fr 1fr;
-    grid-template-rows: 140px 280px 300px;
+    grid-template-rows: 35% 35% 40%;
     grid-template-areas: 
       "about-me amb2 amb2" 
       "my-work mw1 mw1"
@@ -167,22 +167,22 @@ grid-area:cm1;
 
 @media screen and (max-width: 992px) {
     main {
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(3, 100px);
+        grid-template-columns: 3fr;
+        grid-template-rows: 35% 35% 40%;
         }
+    header nav ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 40px 40px;
     }
     
 
 @media screen and (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 100px);
+    .main-content {
+        grid-template-columns: 3fr;
+        grid-template-rows: repeat(6, 200px);
         }
     
     header nav ul {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 10px);
-        gap: 40px;
-        
+        position: relative; left: -150px; top: -40px;
+        }}
     }
-}

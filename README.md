@@ -16,6 +16,8 @@ mdn
 ## Badges
 
 https://cyndicodes.github.io/cyndis_portfolio/
+![mod2 readme 2](https://github.com/CyndiCodes/cyndis_portfolio/assets/135991739/64e1c8c4-c40d-48c4-b039-a0b02cea11e1)
+![mod 2 hw](https://github.com/CyndiCodes/cyndis_portfolio/assets/135991739/183e4157-6c0b-4713-9e49-681c9d489d75)
 
 ## Features
 
@@ -23,4 +25,5 @@ anchors to other pages
 media queries to adjust views on different devices
 nav to different sections of the page 
 grid-template-area for main content 
+
 

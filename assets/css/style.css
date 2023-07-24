@@ -44,9 +44,6 @@ header nav {
     top: 70px; 
     left: 100px;
     padding-left: 50px;
-}
-
-header nav {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -81,27 +78,27 @@ a h2{
     position: relative; left: 40px; top: -10px
 }
 
+/* css for all images the same for now, may have to update later  */
 a img {
     position: relative; left: 20px; top: -10px;
     border-radius: 20px;
-    width: 80%;
+    width: 90%;
 }
 .captions {
     font-size: 60px;
     border-right: solid;
-   
 }
 
 .description1 {
     font-size: 25px;
     margin-right: 10%;
 }
+
 .description2 {
     font: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 10%;
-
 }
 
 .image-links1 {
@@ -110,8 +107,6 @@ a img {
     border: solid 2px black;
     background-color: rgb(27, 44, 48);
     border-radius: 20px;
-
-    
 }
 
 .image-links2{
@@ -164,13 +159,16 @@ grid-area:cm1;
 }
 /*ending here is the formatting for the content or grid layout */  
   
-  
+
 @media screen and (max-width: 992px) {
-    header nav ul {
+    header nav {
         grid-template-columns: 1fr;
         grid-template-rows: 10%;
         grid-template-rows: 40px 40px 40px;
-    }
+        position: relative;
+        padding-left: -40px; left: 40px;
+            }
+
 
     .main-content {
         display: none; 
@@ -181,21 +179,24 @@ grid-area:cm1;
     .captions {
         border: none;
         border-bottom: solid;
+        
+    }
 
+   .image-links1 {
+        border: none;
+        background-color: rgb(59, 101, 111);
+    }
+
+    .image-links2{
+        border: none;
+        background-color: rgb(59, 101, 111);
+        border-radius: 20px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    .main-content {
-
-        }
-    
-    header nav ul {
-        position: relative; left: -150px; top: -40px;
-        header nav ul {
-        padding-left: -40px;
-        }
+    header nav {
+        left: -60px;
     }
-    }
-    }
+}

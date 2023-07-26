@@ -4,10 +4,11 @@ body {
 }
 
 header {
+    margin: 0 auto;
     display: block;
     box-sizing: border-box;
     color: white;
-    border-style: groove;
+    /* border-style: groove; */
 }
 
 header section {
@@ -15,7 +16,7 @@ header section {
     position: relative;
     border-bottom: groove;
     background-color: rgb(27, 44, 48);
-    height: 80%;
+    height: 100%;
 }
 
 #profile-pic {
@@ -46,12 +47,12 @@ a {
     color: white;
 }
 
-#banner {
+/* #banner {
     position:static;
     width:100%;
     max-width: 100%;
     position: relative; top: 2.5px;
-}
+} */
 
 /* starting here is the formatting for the content or grid layout */
 section{
@@ -59,13 +60,18 @@ section{
   
 }
 
+a:hover{
+    background-color: aliceblue;
+}
+
+
 a h2{
     position: relative; left: 40px; top: -10px
 }
 
 main {
     display: grid;
-    gap:30px;
+    gap:50px;
     grid-template-areas: 
       "about-me amb2 amb2" 
       "my-work mw1 mw1"
@@ -75,9 +81,11 @@ main {
 
 /* css for all body images the same for now, may have to update later  */
 
-main img {
+a main img{
     position: relative; top: -10px;
     width: 100%;
+    display: contents;
+    
 }
 
 .captions {

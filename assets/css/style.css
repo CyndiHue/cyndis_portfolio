@@ -165,40 +165,61 @@ grid-area:cm1;
 }
 /*ending here is the formatting for the content or grid layout */  
   
-
 @media screen and (max-width: 992px) {
     header nav {
         grid-template-columns: 1fr;
-        grid-template-rows: 10%;
-        grid-template-rows: 40px 40px 40px;
+        grid-template-rows: 100%;
+        grid-template-rows: 30px 40px 40px;
         position: relative;
         padding-left: -40px; left: 40px;
             }
-
-
+    a {
+        display: contents;
+        background-color: rgb(27, 44, 48);
+        border-radius: 20px;
+        width: 50%;
+    }
+    main img{
+        
+    }
     .main-content {
-        /* display: none;  */
         display: block;
+        
+        grid-template-columns: 1fr;
         padding: 20px 40px 20px 40px;
+      
     }  
 
     .captions {
         border: none;
         border-bottom: solid;
-        
     }
 
    .image-links1 {
-        border: none;
-        background-color: rgb(59, 101, 111);
+     background-color: rgb(13, 54, 64);
+     display: block;
+
+
+    }
+    .image-links2{
+        background-color: rgb(13, 54, 64);
+        display: block;
+    }
+   .image-links1:hover {
+        border: solid;
+        background-color: rgb(5, 8, 9);
+    
     }
 
-    .image-links2{
-        border: none;
-        background-color: rgb(59, 101, 111);
+    .image-links2:hover{ 
+        border: solid;
+        background-color: rgb(5, 8, 9);
         border-radius: 20px;
+        width: 60%;
+    
     }
-}
+
+} 
 
 
 @media screen and (max-width: 768px) {

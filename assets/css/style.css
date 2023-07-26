@@ -1,6 +1,14 @@
+
+*/{
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
     background-color: rgb(59, 101, 111);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 header {
@@ -19,20 +27,20 @@ header section {
     height: 100%;
 }
 
-#profile-pic {
+#img1 {
     width: 150px;
     border-radius: 100%;
     padding: 10px;
     margin: 10px;
 }
 
-h1 {
+header h1 {
     font-weight: bold;
     font-size: 40px;
     position: relative; top: 35px;
 }
 
-nav {
+header nav {
     position: relative; 
     top: 70px; 
     left: 100px;
@@ -47,12 +55,12 @@ a {
     color: white;
 }
 
-/* #banner {
+#banner {
     position:static;
     width:100%;
     max-width: 100%;
     position: relative; top: 2.5px;
-} */
+}
 
 /* starting here is the formatting for the content or grid layout */
 section{
@@ -71,7 +79,7 @@ a h2{
 
 main {
     display: grid;
-    gap:50px;
+    gap:30px;
     grid-template-areas: 
       "about-me amb2 amb2" 
       "my-work mw1 mw1"
@@ -81,48 +89,59 @@ main {
 
 /* css for all body images the same for now, may have to update later  */
 
-a main img{
+main img {
     position: relative; top: -10px;
     width: 100%;
-    display: contents;
-    
 }
-
 .captions {
     font-size: 60px;
     border-right: solid;
 }
 
-.about-me-description {
+.description1 {
     font-size: 25px;
     margin-right: 10%;
 }
 
-/* myw work section */
-.large-link {
-    border: solid 2px black;
-    background-color: rgb(27, 44, 48);
-    border-radius: 20px;
-}
-
-.small-link{
-
-    border: solid 2px black;
-    background-color: rgb(27, 44, 48);
-    border-radius: 20px;
-}
-.contact-me-info {
+.description2 {
     font: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 10%;
 }
+
+.image-links1 {
+    width: 100%;
+    height: 100%;
+    border: solid 2px black;
+    background-color: rgb(27, 44, 48);
+    border-radius: 20px;
+}
+
+.image-links2{
+    width: 100%;
+    height: 100%;
+    border: solid 2px black;
+    background-color: rgb(27, 44, 48);
+    border-radius: 20px;
+}
+
+
+.main-content {
+    display: grid;
+    gap:30px;
+    grid-template-areas: 
+      "about-me amb2 amb2" 
+      "my-work mw1 mw1"
+      "my-work mw2 mw3"
+      "contact-me cm1 cm1";
+}
+  
 .about-me{
   grid-area:about-me;
 }
 .amb2{
   grid-area:amb2;
-  
 }
 .my-work{
   grid-area:my-work;
@@ -130,17 +149,14 @@ a main img{
 
 .mw1 {
     grid-area: mw1;
-    width: 90%
 }
 
 .mw2{
 grid-area:mw2;
-width: 80%
 }
 
 .mw3{
 grid-area:mw3;
-width: 80%
 }
 
 .contact-me{
@@ -149,13 +165,6 @@ grid-area:contact-me;
 
 .cm1{
 grid-area:cm1;
-}
-
-footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
 }
 /*ending here is the formatting for the content or grid layout */  
   
@@ -167,11 +176,10 @@ footer {
         grid-template-rows: 40px 40px 40px;
         position: relative;
         padding-left: -40px; left: 40px;
-       
             }
 
 
-    main {
+    .main-content {
         display: none; 
         display: block;
         padding: 20px 40px 20px 40px;
@@ -183,20 +191,21 @@ footer {
         
     }
 
-   .large-link {
+   .image-links1 {
         border: none;
         background-color: rgb(59, 101, 111);
     }
 
-    .small-link{
+    .image-links2{
         border: none;
         background-color: rgb(59, 101, 111);
+        border-radius: 20px;
     }
 }
 
 
 @media screen and (max-width: 768px) {
     header nav {
-        left: -45px;
+        left: -60px;
     }
 }
